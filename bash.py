@@ -29,7 +29,7 @@ banner = """
     dZP          qKKb
    fZP            SMMb
    HZM            MMMM    {}Coded by {}: HackerSM9
-{}   FqM            MMMM {}    G-Dev{}: {}@HackerSM9
+{}   FqM            MMMM {}   {}G-Dev{}: @HackerSM9
 {} __|'\ .        |\{}dS qML
 {} |    `.       | `' \{}Zq
 {}_)      \.{}___.{},|     .'
