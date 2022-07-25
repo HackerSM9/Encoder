@@ -29,7 +29,7 @@ banner = """
     dZP          qKKb
    fZP            SMMb
    HZM            MMMM    {}Coded by {}: HackerSM9
-{}   FqM            MMM {}G-Dev{}: {}@HackerSM9
+{}   FqM            MMMM {}    G-Dev{}: {}@HackerSM9
 {} __|'\ .        |\{}dS qML
 {} |    `.       | `' \{}Zq
 {}_)      \.{}___.{},|     .'
@@ -41,8 +41,8 @@ banner2 = """
    {}[{}1{}]{} Encript      {}[{}2{}]{} Decrypt
 """.format(G,W,G,W,G,W,G,W)
 
-print banner
-print banner2
+print (banner)
+print (banner2)
 
 def dekrip():
    try:
