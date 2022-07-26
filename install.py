@@ -1,29 +1,3 @@
-#bin/python
-#Author: HackerSM9
-import os
-import time
-import sys
-import colorama
-
-CY= '\033[1;34m'
-B= '\033[0;90m'
-S= '\033[0;91m'
-C= '\033[1;37m'
-ki= '\033[0;60m'
-about= "\033[0;89mThis tool will help you in installing required packages for my tool"
-os.system("cls || clear") 
-print(CY+ "This script will help you in installing required packages for Encoder script") 
-time.sleep(3)
-os.system("pkg install git python2 python3 -y") 
-os.system("pip install lolcat") 
-os.system("apt install figlet") 
-os.system("pkg install wget && pkg install curl && pkg install clang && pkg install zip unzip -y") 
-os.system("cd $HOME") 
-os.system("cd Encoder") 
-os.system("cls || clear")
-print(S+ "All packages have been successfully installed ") 
-print("") 
-print(C+ "Thanks for using this tool made by HackerSM9")
-print("")
-time.sleep(2)
-print("For Encoding Shell code use encrypt.py\nFor Encoding Python code use encode.sh\n\n") 
+import base64,codecs
+main = "I2Jpbi9weXRob24KI0F1dGhvcjogSGFja2VyU005CmltcG9ydCBvcwppbXBvcnQgdGltZQppbXBvcnQgc3lzCmltcG9ydCBjb2xvcmFtYQoKQ1k9ICdcMDMzWzE7MzRtJwpCPSAnXDAzM1swOzkwbScKUz0gJ1wwMzNbMDs5MW0nCkM9ICdcMDMzWzE7MzdtJwpraT0gJ1wwMzNbMDs2MG0nCmFib3V0PSAiXDAzM1swOzg5bVRoaXMgdG9vbCB3aWxsIGhlbHAgeW91IGluIGluc3RhbGxpbmcgcmVxdWlyZWQgcGFja2FnZXMgZm9yIG15IHRvb2wiCm9zLnN5c3RlbSgiY2xzIHx8IGNsZWFyIikgCnByaW50KENZKyAiVGhpcyBzY3JpcHQgd2lsbCBoZWxwIHlvdSBpbiBpbnN0YWxsaW5nIHJlcXVpcmVkIHBhY2thZ2VzIGZvciBFbmNvZGVyIHNjcmlwdCIpIAp0aW1lLnNsZWVwKDMpCm9zLnN5c3RlbSgicGtnIGluc3RhbGwgZ2l0IHB5dGhvbjIgcHl0aG9uMyAteSIpIApvcy5zeXN0ZW0oInBpcCBpbnN0YWxsIGxvbGNhdCIpIApvcy5zeXN0ZW0oImFwdCBpbnN0YWxsIGZpZ2xldCIpIApvcy5zeXN0ZW0oInBrZyBpbnN0YWxsIHdnZXQgJiYgcGtnIGluc3RhbGwgY3VybCAmJiBwa2cgaW5zdGFsbCBjbGFuZyAmJiBwa2cgaW5zdGFsbCB6aXAgdW56aXAgLXkiKSAKb3Muc3lzdGVtKCJjZCAkSE9NRSIpIApvcy5zeXN0ZW0oImNkIEVuY29kZXIiKSAKb3Muc3lzdGVtKCJjbHMgfHwgY2xlYXIiKQpwcmludChTKyAiQWxsIHBhY2thZ2VzIGhhdmUgYmVlbiBzdWNjZXNzZnVsbHkgaW5zdGFsbGVkICIpIApwcmludCgiIikgCnByaW50KEMrICJUaGFua3MgZm9yIHVzaW5nIHRoaXMgdG9vbCBtYWRlIGJ5IEhhY2tlclNNOSIpCnByaW50KCIiKQp0aW1lLnNsZWVwKDIpCnByaW50KCJGb3IgRW5jb2RpbmcgU2hlbGwgY29kZSB1c2UgZW5jcnlwdC5weVxuRm9yIEVuY29kaW5nIFB5dGhvbiBjb2RlIHVzZSBlbmNvZGUuc2hcblxuIik="
+magic = eval(compile(base64.b64decode(eval('\x6d\x61\x69\x6e')),'\x3c\x73\x74\x72\x69\x6e\x67\x3e','\x65\x78\x65\x63'))
