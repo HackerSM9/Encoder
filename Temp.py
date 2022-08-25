@@ -18,7 +18,7 @@ print("")
 os.system("toilet -f ivrit Insta-Hack | lolcat")
 print("")
 print(f'''{Red}                                 ⫸ Coded by{Yellow} HackerSM9{Red} ⫷\033[0m
-        {Red}                         ⫸{Purple} Hacker | Developer | Programmer {Red}⫷\033[0m
+ {Red}                         ⫸{Purple} Hacker | Developer | Programmer {Red}⫷\033[0m
 
  {Green}     |---------------------------------------------------------------------|
  {Green}     ||----------------------------{Cyan} [features] {Green}---------------------------||
