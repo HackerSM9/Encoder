@@ -23,14 +23,14 @@ print(f'''{Red}                                 ⫸ Coded by{Yellow} HackerSM9{R
  {Green}     |---------------------------------------------------------------------|
  {Green}     ||----------------------------{Cyan} [features] {Green}---------------------------||
  {Green}     ||                                                                   ||
- {Green}     ||            {Purple}==>{Yellow}[1] Insta information gathering{Green}                    ||
- {Green}     ||            {Purple}==>️{Yellow}[️2] Insta brute force attack{Green}                       ||
- {Green}     ||            {Purple}==>{Yellow}[3] Insta auto reporter{Green}                            ||
- {Green}     ||            {Purple}==>{Yellow}[4] Insta phishing page(coming soon){Green}               ||
- {Green}     ||            {Purple}==>{Yellow}[5] Update script{Green}                                  ||
- {Green}     ||            {Purple}==>{Yellow}[6] Remove script{Green}                                  ||
- {Green}     ||            {Purple}==>{Yellow}[️7] About{Green}                                          ||
- {Green}     ||            {Purple}==>{Yellow}[x] exit{Green}                                           ||
+ {Green}     ||             {Purple}==>{Yellow}[1] Insta information gathering{Green}                    ||
+ {Green}     ||             {Purple}==>️{Yellow}[️2] Insta brute force attack{Green}                       ||
+ {Green}     ||             {Purple}==>{Yellow}[3] Insta auto reporter{Green}                            ||
+ {Green}     ||             {Purple}==>{Yellow}[4] Insta phishing page(coming soon){Green}               ||
+ {Green}     ||             {Purple}==>{Yellow}[5] Update script{Green}                                  ||
+ {Green}     ||             {Purple}==>{Yellow}[6] Remove script{Green}                                  ||
+ {Green}     ||             {Purple}==>{Yellow}[️7] About{Green}                                          ||
+ {Green}     ||             {Purple}==>{Yellow}[x] exit{Green}                                           ||
  {Green}     ||                                                                   ||
  {Green}     ||---------------------------{Cyan} [select option] {Green}-----------------------||
  {Green}     |---------------------------------------------------------------------|''')
