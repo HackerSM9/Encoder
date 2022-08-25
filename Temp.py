@@ -29,7 +29,7 @@ print(f'''{Red}                                 ⫸ Coded by{Yellow} HackerSM9{R
  {Green}     ||             {Purple}==>{Yellow}[5] Update script{Green}                                  ||
  {Green}     ||             {Purple}==>{Yellow}[6] Remove script{Green}                                  ||
  {Green}     ||             {Purple}==>{Yellow}[️7] About{Green}                                          ||
- {Green}     ||             {Purple}==>{Yellow}[x] exit{Green}                                           ||
+ {Green}     ||             {Purple}==>{Yellow}[0] exit{Green}                                           ||
  {Green}     ||                                                                   ||
  {Green}     ||---------------------------{Cyan} [select option] {Green}-----------------------||
  {Green}     |---------------------------------------------------------------------|''')
@@ -46,33 +46,28 @@ if ch == 2:
     os.system("cd $HOME/insta-hack/ig_brute_force")
     os.system("bash setup")
     os.system("bash ighack.sh")
-elif [ $ch -eq 3 ];then
-git clone https://github.com/Crevils/InstaReport
-cd InstaReport
-pip install -r requirements.txt
-python ReportBot.py
-exit
-elif [ $ch -eq 4 ];then
-os.system("cd $HOME")
-echo "Coming Soon!\n"
-exit
-elif [ $ch -eq 5 ];then
-echo -e "\e[1;34m Downloading Latest Files..."
-os.system("cd $HOME")
-rm -rf insta-hack
-git clone https://github.com/HackerSM9/insta-hack
-cd insta-hack
-bash insta-hack.sh
-exit
-elif [ $ch -eq 6 ];then
-os.system("cd $HOME")
-rm -rf insta-hack
-exit
+if ch == 3:
+    os.system("git clone https://github.com/Crevils/InstaReport")
+    os.system("cd InstaReport")
+    os.system("pip install -r requirements.txt")
+    os.system("python ReportBot.py")
+if ch == 4:
+    os.system("cd $HOME")
+    print("\nComing Soon!\n")
+if ch == 5:
+    print("\033[1;34m Downloading Latest Files...")
+    os.system("cd $HOME")
+    os.system("rm -rf insta-hack")
+    os.system("git clone https://github.com/HackerSM9/insta-hack")
+    os.system("cd insta-hack")
+    os.system("bash insta-hack.sh")
+if ch == 6:
+os.system("cd $HOME && rm -rf insta-hack")
 elif [ $ch -eq 7 ];then
 echo -e
 os.system("cd $HOME")
 exit
-elif [ $ch -eq x ];then
+elif [ $ch -eq 0 ];then
 echo "Exited Successfully !!!\n"
 os.system("cd $HOME")
 exit
