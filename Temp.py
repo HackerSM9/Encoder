@@ -47,15 +47,13 @@ if ch == 5:
     print("\033[1;34m Downloading Latest Files...")
     os.system("cd $HOME && rm -rf insta-hack && git clone https://github.com/HackerSM9/insta-hack && cd insta-hack && bash insta-hack.sh")
 if ch == 6:
-os.system("cd $HOME && rm -rf insta-hack")
-elif [ $ch -eq 7 ];then
-echo -e
-os.system("cd $HOME")
-exit
-elif [ $ch -eq 0 ];then
-echo "Exited Successfully !!!\n"
-os.system("cd $HOME")
-exit
+    os.system("cd $HOME && rm -rf insta-hack")
+if ch == 7:
+    os.system("xdg-open https://github.com/HackerSM9/")
+if ch == 0:
+    print("\nExited Successfully !!!\n")
+    os.system("cd $HOME")
+elif ch >= 8:
+    print("\033[4;32m Invalid Input !!! \033[0m")
 else
-echo -e "\e[4;32m Invalid Input !!! \e[0m"
-fi
+    print(Cyan+"\nDone! \n")
