@@ -43,7 +43,7 @@ os.system("cd Ig_information_gathering")
 os.system("bash start.sh")
 exit
 elif [ $ch -eq 2 ];then
-cd $HOME
+os.system("cd $HOME")
 git clone https://github.com/noob-hackers/ighack
 cd $HOME/insta-hack/ig_brute_force
 bash setup
@@ -56,28 +56,28 @@ pip install -r requirements.txt
 python ReportBot.py
 exit
 elif [ $ch -eq 4 ];then
-cd $HOME
+os.system("cd $HOME")
 echo "Coming Soon!\n"
 exit
 elif [ $ch -eq 5 ];then
 echo -e "\e[1;34m Downloading Latest Files..."
-cd $HOME
+os.system("cd $HOME")
 rm -rf insta-hack
 git clone https://github.com/HackerSM9/insta-hack
 cd insta-hack
 bash insta-hack.sh
 exit
 elif [ $ch -eq 6 ];then
-cd $HOME
+os.system("cd $HOME")
 rm -rf insta-hack
 exit
 elif [ $ch -eq 7 ];then
 echo -e
-cd $HOME
+os.system("cd $HOME")
 exit
 elif [ $ch -eq x ];then
 echo "Exited Successfully !!!\n"
-cd $HOME
+os.system("cd $HOME")
 exit
 else
 echo -e "\e[4;32m Invalid Input !!! \e[0m"
