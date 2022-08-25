@@ -36,31 +36,16 @@ print(f'''{Red}                                 ⫸ Coded by{Yellow} HackerSM9{R
 print("\n")
 ch = int(input("\033[1;36mSelect Option >>> "))
 if ch == 1:
-    os.system("cd $HOME")
-    os.system("cd insta-hack")
-    os.system("cd Ig_information_gathering")
-    os.system("bash start.sh")
+    os.system("cd && cd insta-hack && cd Ig_information_gathering && bash start.sh")
 if ch == 2:
-    os.system("cd $HOME")
-    os.system("git clone https://github.com/noob-hackers/ighack")
-    os.system("cd $HOME/insta-hack/ig_brute_force")
-    os.system("bash setup")
-    os.system("bash ighack.sh")
+    os.system("cd && git clone https://github.com/noob-hackers/ighack && cd $HOME/insta-hack/ig_brute_force && bash setup && bash ighack.sh")
 if ch == 3:
-    os.system("git clone https://github.com/Crevils/InstaReport")
-    os.system("cd InstaReport")
-    os.system("pip install -r requirements.txt")
-    os.system("python ReportBot.py")
+    os.system("git clone https://github.com/Crevils/InstaReport && cd InstaReport && pip install -r requirements.txt && python ReportBot.py")
 if ch == 4:
-    os.system("cd $HOME")
     print("\nComing Soon!\n")
 if ch == 5:
     print("\033[1;34m Downloading Latest Files...")
-    os.system("cd $HOME")
-    os.system("rm -rf insta-hack")
-    os.system("git clone https://github.com/HackerSM9/insta-hack")
-    os.system("cd insta-hack")
-    os.system("bash insta-hack.sh")
+    os.system("cd $HOME && rm -rf insta-hack && git clone https://github.com/HackerSM9/insta-hack && cd insta-hack && bash insta-hack.sh")
 if ch == 6:
 os.system("cd $HOME && rm -rf insta-hack")
 elif [ $ch -eq 7 ];then
