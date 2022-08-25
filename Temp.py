@@ -35,19 +35,17 @@ print(f'''{Red}                                 ⫸ Coded by{Yellow} HackerSM9{R
  {Green}     |---------------------------------------------------------------------|''')
 print("\n")
 ch = int(input("\033[1;36mSelect Option >>> "))
-if [ $ch -eq 1 ];then
-os.system("cd $HOME")
-os.system("cd insta-hack")
-os.system("cd Ig_information_gathering")
-os.system("bash start.sh")
-exit
-elif [ $ch -eq 2 ];then
-os.system("cd $HOME")
-git clone https://github.com/noob-hackers/ighack
-cd $HOME/insta-hack/ig_brute_force
-bash setup
-bash ighack.sh
-exit
+if ch == 1:
+    os.system("cd $HOME")
+    os.system("cd insta-hack")
+    os.system("cd Ig_information_gathering")
+    os.system("bash start.sh")
+if ch == 2:
+    os.system("cd $HOME")
+    os.system("git clone https://github.com/noob-hackers/ighack")
+    os.system("cd $HOME/insta-hack/ig_brute_force")
+    os.system("bash setup")
+    os.system("bash ighack.sh")
 elif [ $ch -eq 3 ];then
 git clone https://github.com/Crevils/InstaReport
 cd InstaReport
