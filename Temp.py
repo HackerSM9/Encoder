@@ -14,11 +14,10 @@ os.system("clear")
 print(f"{Purple} Created By {Blue}")
 os.system("toilet -f ivrit HackerSM9 | lolcat")
 time.sleep(2)
-print("")
 os.system("toilet -f ivrit Insta-Hack | lolcat")
 print("")
 print(f'''{Red}                                 ⫸ Coded by{Yellow} HackerSM9{Red} ⫷\033[0m
- {Red}                         ⫸{Purple} Hacker | Developer | Programmer {Red}⫷\033[0m
+{Red}                         ⫸{Purple} Hacker | Developer | Programmer {Red}⫷\033[0m
 
  {Green}     |---------------------------------------------------------------------|
  {Green}     ||----------------------------{Cyan} [features] {Green}---------------------------||
@@ -35,7 +34,7 @@ print(f'''{Red}                                 ⫸ Coded by{Yellow} HackerSM9{R
  {Green}     ||---------------------------{Cyan} [select option] {Green}-----------------------||
  {Green}     |---------------------------------------------------------------------|''')
 print("\n")
-read ch
+ch = int(input("\033[1;36mSelect Option >>> "))
 if [ $ch -eq 1 ];then
 os.system("cd $HOME")
 os.system("cd insta-hack")
