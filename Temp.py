@@ -11,7 +11,7 @@ Cyan="\033[1;36m"
 White="\033[1;37m"
  
 os.system("clear")
-os.system(f"{Purple} Created By {Blue}")
+print(f"{Purple} Created By {Blue}")
 os.system("toilet -f ivrit HackerSM9 | lolcat")
 time.sleep(2)
 print("")
