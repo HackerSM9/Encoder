@@ -22,10 +22,10 @@ print(f'''{Red}                                 ⫸ Coded by{Yellow} HackerSM9{R
  {Green}     |---------------------------------------------------------------------|
  {Green}     ||----------------------------{Cyan} [features] {Green}---------------------------||
  {Green}     ||                                                                   ||
- {Green}     ||             {Purple}==>{Yellow}[1] Insta information gathering{Green}                    ||
+ {Green}     ||             {Purple}==>{Yellow}[1] Insta Information Gathering{Green}                    ||
  {Green}     ||             {Purple}==>️{Yellow}[️2] Insta brute force attack{Green}                       ||
  {Green}     ||             {Purple}==>{Yellow}[3] Insta auto reporter{Green}                            ||
- {Green}     ||             {Purple}==>{Yellow}[4] Insta phishing page(coming soon){Green}               ||
+ {Green}     ||             {Purple}==>{Yellow}[4] Insta Information Gathering 2{Green}                    ||
  {Green}     ||             {Purple}==>{Yellow}[5] Update script{Green}                                  ||
  {Green}     ||             {Purple}==>{Yellow}[6] Remove script{Green}                                  ||
  {Green}     ||             {Purple}==>{Yellow}[️7] About{Green}                                          ||
@@ -42,7 +42,7 @@ if ch == 2:
 if ch == 3:
     os.system("git clone https://github.com/Crevils/InstaReport && cd InstaReport && pip install -r requirements.txt && python ReportBot.py")
 if ch == 4:
-    print("\nComing Soon!\n")
+    os.system("python3 .page.py")
 if ch == 5:
     print("\033[1;34m Downloading Latest Files...")
     os.system("cd $HOME && rm -rf insta-hack && git clone https://github.com/HackerSM9/insta-hack && cd insta-hack && bash insta-hack.sh")
