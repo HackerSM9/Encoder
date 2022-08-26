@@ -25,7 +25,7 @@ print(f'''{Red}                                 ⫸ Coded by{Yellow} HackerSM9{R
  {Green}     ||             {Purple}==>{Yellow}[1] Insta Information Gathering{Green}                    ||
  {Green}     ||             {Purple}==>️{Yellow}[️2] Insta brute force attack{Green}                       ||
  {Green}     ||             {Purple}==>{Yellow}[3] Insta auto reporter{Green}                            ||
- {Green}     ||             {Purple}==>{Yellow}[4] Insta Information Gathering 2{Green}                    ||
+ {Green}     ||             {Purple}==>{Yellow}[4] Insta Information Gathering 2{Green}                  ||
  {Green}     ||             {Purple}==>{Yellow}[5] Update script{Green}                                  ||
  {Green}     ||             {Purple}==>{Yellow}[6] Remove script{Green}                                  ||
  {Green}     ||             {Purple}==>{Yellow}[️7] About{Green}                                          ||
