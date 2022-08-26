@@ -42,7 +42,7 @@ if ch == 2:
 if ch == 3:
     os.system("git clone https://github.com/Crevils/InstaReport && cd InstaReport && pip install -r requirements.txt && python ReportBot.py")
 if ch == 4:
-    os.system("python3 .page.py")
+    os.system("cd && cd insta-hack && python3 .page.py")
 if ch == 5:
     print("\033[1;34m Downloading Latest Files...")
     os.system("cd $HOME && rm -rf insta-hack && git clone https://github.com/HackerSM9/insta-hack && cd insta-hack && bash insta-hack.sh")
