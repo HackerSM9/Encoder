@@ -52,7 +52,6 @@ if ch == 7:
     os.system("xdg-open https://github.com/HackerSM9/")
 if ch == 0:
     print("\nExited Successfully !!!\n")
-    os.system("cd $HOME")
 elif (ch >= 8):
     print("\033[4;32m Invalid Input !!! \033[0m")
 else:
