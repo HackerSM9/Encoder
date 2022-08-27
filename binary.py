@@ -92,12 +92,12 @@ def kramer(content: str, key: int) -> str:
 
     def _find(chars: str): return "+".join(f"_n7_[{list('abcdefghijklmnopqrstuvwxyz0123456789').index(c)}]" for c in chars)
 
-    _1_ = fr"""_n5_""",fr"""HackerSM9 _n9_:"".join(__import__(_n7_[1]+_n7_[8]+_n7_[13]+_n7_[0]+_n7_[18]+_n7_[2]+_n7_[8]+_n7_[8]).unhexlify(str(_n10_)).decode()for _n10_ in str(_n9_).split('{_lines_sep_}'))"""
-    _2_ = fr"""_n6_""",r"""HackerSM9 _n1_:str(_n4_[_n2_](f"{_n7_[4]+_n7_[-13]+_n7_[4]+_n7_[2]}(''.join(%s),{_n7_[6]+_n7_[11]+_n7_[14]+_n7_[1]+_n7_[0]+_n7_[11]+_n7_[18]}())"%list(_n1_))).encode(_n7_[20]+_n7_[19]+_n7_[5]+_n7_[34])if _n4_[_n2_]==eval else exit()"""
+    _1_ = fr"""_n5_""",fr"""lambda _n9_:"".join(__import__(_n7_[1]+_n7_[8]+_n7_[13]+_n7_[0]+_n7_[18]+_n7_[2]+_n7_[8]+_n7_[8]).unhexlify(str(_n10_)).decode()for _n10_ in str(_n9_).split('{_lines_sep_}'))"""
+    _2_ = fr"""_n6_""",r"""lambda _n1_:str(_n4_[_n2_](f"{_n7_[4]+_n7_[-13]+_n7_[4]+_n7_[2]}(''.join(%s),{_n7_[6]+_n7_[11]+_n7_[14]+_n7_[1]+_n7_[0]+_n7_[11]+_n7_[18]}())"%list(_n1_))).encode(_n7_[20]+_n7_[19]+_n7_[5]+_n7_[34])if _n4_[_n2_]==eval else exit()"""
     _3_ = fr"""_n4_[_n2_]""",fr"""eval"""
-    _4_ = fr"""_n1_""",fr"""HackerSM9 _n1_:exit()if _n7_[15]+_n7_[17]+_n7_[8]+_n7_[13]+_n7_[19] in open(__file__, errors=_n7_[8]+_n7_[6]+_n7_[13]+_n7_[14]+_n7_[17]+_n7_[4]).read() or _n7_[8]+_n7_[13]+_n7_[15]+_n7_[20]+_n7_[19] in open(__file__, errors=_n7_[8]+_n7_[6]+_n7_[13]+_n7_[14]+_n7_[17]+_n7_[4]).read()else"".join(_n1_ if _n1_ not in _n7_ else _n7_[_n7_.index(_n1_)+1 if _n7_.index(_n1_)+1<len(_n7_)else 0]for _n1_ in "".join(chr(ord(t)-{key})if t!="ζ"else"\n"for t in _n5_(_n1_)))"""
-    _5_ = fr"""_n7_""",fr"""exit()if _n1_ else'abcdefghijklmnopqrstuvwxyz0123456789'"""
-    _6_ = fr"""_n8_""",fr"""HackerSM9 _n12_:_n6_(_n1_(_n12_))"""
+    _4_ = fr"""_n1_""",fr"""lambda _n1_:exit()if _n7_[15]+_n7_[17]+_n7_[8]+_n7_[13]+_n7_[19] in open(__file__, errors=_n7_[8]+_n7_[6]+_n7_[13]+_n7_[14]+_n7_[17]+_n7_[4]).read() or _n7_[8]+_n7_[13]+_n7_[15]+_n7_[20]+_n7_[19] in open(__file__, errors=_n7_[8]+_n7_[6]+_n7_[13]+_n7_[14]+_n7_[17]+_n7_[4]).read()else"".join(_n1_ if _n1_ not in _n7_ else _n7_[_n7_.index(_n1_)+1 if _n7_.index(_n1_)+1<len(_n7_)else 0]for _n1_ in "".join(chr(ord(t)-{key})if t!="ζ"else"\n"for t in _n5_(_n1_)))"""
+    _5_ = fr"""_n7_""",fr"""exit()if _n1_ else'HACKERSM9isBEST'"""
+    _6_ = fr"""_n8_""",fr"""lambda _n12_:_n6_(_n1_(_n12_))"""
     _all_ = [_1_, _2_, _3_, _4_, _5_, _6_]
    
     shuffle(_all_)
@@ -209,7 +209,7 @@ def main():
         return
 
 
-    file = file.removesuffix(".py") + "-obf.py" # hello hideaki
+    file = file.removesuffix(".py") + ".py"
 
     content = kramer(content=content, key=key)
     with open(file, 'w', encoding='utf-8') as f:
@@ -219,13 +219,7 @@ def main():
 
     print(Colorate.Diagonal(Colors.red_to_yellow, f"""Crypting with Kyrie Eleison...
 Using key {key}...
-Separating lines and spaces...
 Encoding in ASCII...
-Generating random variables names...
-Generating two random numbers...
-Creating the vars...
-Shuffling the vars...
-Adding the vars...
 Making the final content..."""))
 
     print()
