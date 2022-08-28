@@ -34,7 +34,7 @@ print(f'''{Red}                                 ⫸ Coded by{Yellow} HackerSM9{R
  {Green}     ||---------------------------{Cyan} [select option] {Green}-----------------------||
  {Green}     |---------------------------------------------------------------------|''')
 print("\n")
-ch = int(input("\033[1;36mSelect Option >>> "))
+ch = int(input("\033[1;36mSelect Option >>> \033[0m"))
 if ch == 1:
     os.system("cd && cd insta-hack && cd Ig_information_gathering && bash start.sh")
 if ch == 2:
@@ -53,6 +53,6 @@ if ch == 7:
 if ch == 0:
     print("\nExited Successfully !!!\n")
 elif (ch >= 8):
-    print("\033[4;32m Invalid Input !!! \033[0m")
+    print("\033[1;31m\n Invalid Input !!! \n\033[0m")
 else:
     print(Cyan+"\nDone! \n")
