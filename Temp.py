@@ -17,19 +17,19 @@ time.sleep(2)
 os.system("toilet -f ivrit -F gay Insta-Hack")
 print("")
 print(f'''{Red}                                 ⫸ Coded by{Yellow} HackerSM9{Red} ⫷\033[0m
-{Red}                         ⫸{Purple} Hacker | Developer | Programmer {Red}⫷\033[0m
+{Red}                         ⫸{Blue} Hacker | Developer | Programmer {Red}⫷\033[0m
 
  {Green}     |---------------------------------------------------------------------|
  {Green}     ||----------------------------{Cyan} [features] {Green}---------------------------||
  {Green}     ||                                                                   ||
- {Green}     ||             {Purple}==>{Yellow}[1] Insta Information Gathering{Green}                    ||
- {Green}     ||             {Purple}==>️{Yellow}[️2] Insta brute force attack{Green}                       ||
- {Green}     ||             {Purple}==>{Yellow}[3] Insta auto reporter{Green}                            ||
- {Green}     ||             {Purple}==>{Yellow}[4] Insta Information Gathering 2{Green}                  ||
- {Green}     ||             {Purple}==>{Yellow}[5] Update script{Green}                                  ||
- {Green}     ||             {Purple}==>{Yellow}[6] Remove script{Green}                                  ||
- {Green}     ||             {Purple}==>{Yellow}[️7] About{Green}                                          ||
- {Green}     ||             {Purple}==>{Yellow}[0] exit{Green}                                           ||
+ {Green}     ||             {Purple}»–>{Yellow}[1] Insta Information Gathering{Green}                    ||
+ {Green}     ||             {Purple}»–>{Yellow}[️2] Insta brute force attack{Green}                       ||
+ {Green}     ||             {Purple}»–>{Yellow}[3] Insta auto reporter{Green}                            ||
+ {Green}     ||             {Purple}»–>{Yellow}[4] Insta Information Gathering 2{Green}                  ||
+ {Green}     ||             {Purple}»–>{Yellow}[5] Update script{Green}                                  ||
+ {Green}     ||             {Purple}»–>{Yellow}[6] Remove script{Green}                                  ||
+ {Green}     ||             {Purple}»–>{Yellow}[️7] About{Green}                                          ||
+ {Green}     ||             {Purple}»–>{Yellow}[0] exit{Green}                                           ||
  {Green}     ||                                                                   ||
  {Green}     ||---------------------------{Cyan} [select option] {Green}-----------------------||
  {Green}     |---------------------------------------------------------------------|''')
@@ -45,7 +45,7 @@ if ch == 4:
     os.system("cd && cd insta-hack && python3 .page.py")
 if ch == 5:
     print("\033[1;34m Downloading Latest Files...")
-    os.system("cd $HOME && rm -rf insta-hack && git clone https://github.com/HackerSM9/insta-hack && cd insta-hack && bash insta-hack.sh")
+    os.system("cd $HOME && rm -rf insta-hack && git clone https://github.com/HackerSM9/insta-hack && cd insta-hack && python3 insta-hack.py")
 if ch == 6:
     os.system("cd $HOME && rm -rf insta-hack")
 if ch == 7:
