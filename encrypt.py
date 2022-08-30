@@ -1,3 +1,93 @@
-import base64,codecs
-main = "IyBhdXRob3IgOiBASGFja2VyU005CiMgLSotIGNvZGluZzogdXRmLTggLSotCgppbXBvcnQgb3MKaW1wb3J0IHN5cwppbXBvcnQgZmlsZWlucHV0Cgpvcy5zeXN0ZW0oImNsZWFyIikKCk4gPSAnXDAzM1swbScKRCA9ICdcMDMzWzkwbScKVyA9ICdcMDMzWzE7MzdtJwpCID0gJ1wwMzNbMTszNG0nClIgPSAnXDAzM1sxOzMxbScKRyA9ICdcMDMzWzE7MzJtJwpZID0gJ1wwMzNbMTszM20nCkMgPSAnXDAzM1sxOzM2bScKCmFzayA9IEcgKyAnWycgKyBXICsgJz8nICsgRyArICddICcKc3Vrc2VzID0gRyArICdbJyArIFcgKyAn4pyTJyArIEcgKyAnXSAnCmVyb3IgPSBSICsgJ1snICsgVyArICchJyArIFIgKyAnXScKCmJhbm5lciA9ICIiIgp7fSAgICAgICAgIF9ubm5uX3t9ICAgICAgICBfX19fX19fX19fX19fX19fXwp7fSAgICAgICAgZEdHR0dNTWJ7fSAgICAgIHwgICAgICAgICAgICAgICAgIHwKe30gICAgICAgQHB+cXB+fnFNYnt9ICAgLl98IHt9QnkgSGFja2VyU005e30gICAgfAp7fSAgICAgICBNe30oe31Ae30pKHt9QHt9KSB7fU18e30gIC8gIHxfX19fX19fX19fX19fX19fX3wKe30gICAgICAgQCx7fS0tLS0ue31KTXx7fV8vCnt9ICAgICAgSlNee31cX18ve30gIHFLTAogICAgIGRaUCAgICAgICAgcUtSYgogICAgZFpQICAgICAgICAgIHFLS2IKICAgZlpQICAgICAgICAgICAgU01NYgogICBIWk0gICAgICAgICAgICBNTU1NICAgIHt9Q29kZWQgYnkge306IEhhY2tlclNNOQp7fSAgIEZxTSAgICAgICAgICAgIE1NTU0ge30gICAgRy1EZXZ7fToge31ASGFja2VyU005Cnt9IF9ffCdcIC4gICAgICAgIHxce31kUyBxTUwKe30gfCAgICBgLiAgICAgICB8IGAnIFx7fVpxCnt9XykgICAgICBcLnt9X19fLnt9LHwgICAgIC4nClxfX19fICAgKXt9TU1NTU1Qe318ICAgLicKICAgICBgLScgICAgICAgYC0tJwoiIiIuZm9ybWF0KEQsVyxELFcsRCxXLFksVyxELFcsRCxXLEQsVyxELFcsRCxZLEQsVyxELFksRCxHLFcsRyxELEcsVyxHLFksRCxZLEQsWSxELFksRCxZKQoKYmFubmVyMiA9ICIiIgogICB7fVt7fTF7fV17fSBFbmNyaXB0ICAgICAge31be30ye31de30gRGVjcnlwdAoiIiIuZm9ybWF0KEcsVyxHLFcsRyxXLEcsVykKCnByaW50IChiYW5uZXIpCnByaW50IChiYW5uZXIyKQoKZGVmIGRla3JpcCgpOgogICB0cnk6CiAgICAgICBzYyA9IHJhd19pbnB1dChhc2sgKyBXICsgIlNjcmlwdCAiICsgRyArICI+ICIgKyBXKQogICAgICAgZiA9IG9wZW4oc2MsJ3InKQogICAgICAgZmlsZWRhdGEgPSBmLnJlYWQoKQogICAgICAgZi5jbG9zZSgpCgogICAgICAgbmV3ZGF0YSA9IGZpbGVkYXRhLnJlcGxhY2UoImV2YWwiLCJlY2hvIikKCiAgICAgICBvdXQgPSByYXdfaW5wdXQoYXNrICsgVyArICJPdXRwdXQiICsgRyArICIgPiAiICsgVykKICAgICAgIGYgPSBvcGVuKG91dCwndycpCiAgICAgICBmLndyaXRlKG5ld2RhdGEpCiAgICAgICBmLmNsb3NlKCkKCiAgICAgICBvcy5zeXN0ZW0oInRvdWNoIHRlcy5zaCIpCiAgICAgICBvcy5zeXN0ZW0oImJhc2ggIiArIG91dCArICIgPiB0ZXMuc2giKQogICAgICAgb3MucmVtb3ZlKG91dCkKICAgICAgIG9zLnN5c3RlbSgibXYgLWYgdGVzLnNoICIgKyBvdXQpCiAgICAgICBwcmludCAoc3Vrc2VzICsgIkRvbmUuLiIpCgogICBleGNlcHQgS2V5Ym9hcmRJbnRlcnJ1cHQ6CiAgICAgICBwcmludCAoZXJvciArICIgU3RvcHBlZCEiKQogICBleGNlcHQgSU9FcnJvcjoKICAgICAgIHByaW50IChlcm9yICsgIiBGaWxlIE5vdCBGb3VuZCEiKQoKZGVmIGVua3JpcCgpOgogICB0cnk6CiAgICAgICBzY3JpcHQgPSByYXdfaW5wdXQoYXNrICsgVyArICJTY3JpcHQgIiArIEcgKyAiPiAiICsgVykKICAgICAgIG91dHB1dCA9IHJhd19pbnB1dChhc2sgKyBXICsgIk91dHB1dCAiICsgRyArICI+ICIgKyBXKQogICAgICAgb3Muc3lzdGVtKCJiYXNoLW9iZnVzY2F0ZSAiICsgc2NyaXB0ICsgIiAtbyAiICsgb3V0cHV0ICkKICAgICAgIHByaW50IChzdWtzZXMgKyAiRG9uZS4uIikKICAgZXhjZXB0IEtleWJvYXJkSW50ZXJydXB0OgogICAgICAgcHJpbnQgKGVyb3IgKyAiIFN0b3BwZWQhIikKICAgZXhjZXB0IElPRXJyb3I6CiAgICAgICBwcmludCAoZXJvciArICIgRmlsZSBOb3QgRm91bmQhIikKCgp0YWtvayA9IHJhd19pbnB1dChXICsgIkNob29zZSIgKyBHICsgIiA+ICIpCgppZiB0YWtvayA9PSAiMSIgb3IgdGFrb2sgPT0gIjAxIjoKICAgZW5rcmlwKCkKZWxpZiB0YWtvayA9PSAiMiIgb3IgdGFrb2sgPT0gIjAyIjoKICAgZGVrcmlwKCkKZWxzZToKICAgcHJpbnQgKGVyb3IgKyAiIFdyb25nIGlucHV0Iik="
-magic = eval(compile(base64.b64decode(eval('\x6d\x61\x69\x6e')),'\x3c\x73\x74\x72\x69\x6e\x67\x3e','\x65\x78\x65\x63'))
+# author : @HackerSM9
+# -*- coding: utf-8 -*-
+
+import os
+import sys
+import fileinput
+
+os.system("clear")
+
+N = '\033[0m'
+D = '\033[90m'
+W = '\033[1;37m'
+B = '\033[1;34m'
+R = '\033[1;31m'
+G = '\033[1;32m'
+Y = '\033[1;33m'
+C = '\033[1;36m'
+
+ask = G + '[' + W + '?' + G + '] '
+sukses = G + '[' + W + '✓' + G + '] '
+eror = R + '[' + W + '!' + R + ']'
+
+banner = """
+{}         _nnnn_{}        _________________
+{}        dGGGGMMb{}      |                 |
+{}       @p~qp~~qMb{}   ._| {}  By HackerSM9{}  |
+{}       M{}({}@{})({}@{}) {}M|{}  /  |_________________|
+{}       @,{}----.{}JM|{}_/
+{}      JS^{}\__/{}  qKL
+     dZP        qKRb
+    dZP          qKKb
+   fZP            SMMb
+   HZM            MMMM    {}Coded by {}: HackerSM9
+{}   FqM            MMMM {}    G-Dev{}: {}@HackerSM9
+{} __|'\ .        |\{}dS qML
+{} |    `.       | `' \{}Zq
+{}_)      \.{}___.{},|     .'
+\____   ){}MMMMMP{}|   .'
+     `-'       `--'
+""".format(D,W,D,W,D,W,Y,W,D,W,D,W,D,W,D,W,D,Y,D,W,D,Y,D,G,W,G,D,G,W,G,Y,D,Y,D,Y,D,Y,D,Y)
+
+banner2 = """
+   {}[{}1{}]{} Encrypt      {}[{}2{}]{} Decrypt
+""".format(G,W,G,W,G,W,G,W)
+
+print (banner)
+print (banner2)
+
+def dekrip():
+   try:
+       sc = input(ask + W + "Script " + G + "> " + W)
+       f = open(sc,'r')
+       filedata = f.read()
+       f.close()
+
+       newdata = filedata.replace("eval","echo")
+
+       out = input(ask + W + "Output" + G + " > " + W)
+       f = open(out,'w')
+       f.write(newdata)
+       f.close()
+
+       os.system("touch tes.sh")
+       os.system("bash " + out + " > tes.sh")
+       os.remove(out)
+       os.system("mv -f tes.sh " + out)
+       print (sukses + "Done..")
+
+   except KeyboardInterrupt:
+       print (eror + " Stopped!")
+   except IOError:
+       print (eror + " File Not Found!")
+
+def enkrip():
+   try:
+       script = input(ask + W + "Script " + G + "> " + W)
+       output = input(ask + W + "Output " + G + "> " + W)
+       os.system("bash-obfuscate " + script + " -o " + output )
+       print (sukses + "Done..")
+   except KeyboardInterrupt:
+       print (eror + " Stopped!")
+   except IOError:
+       print (eror + " File Not Found!")
+
+
+takok = input(W + "Choose" + G + " > ")
+
+if takok == "1" or takok == "01":
+   enkrip()
+elif takok == "2" or takok == "02":
+   dekrip()
+else:
+   print (eror + " Wrong input")
