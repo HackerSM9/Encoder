@@ -48,10 +48,10 @@ else:
         sys.exit()
 
 fileout = open(o + '.py', 'w')
-fileout.write('#Compiled By HackerSM9\n')
-fileout.write('#https://github.com/HackerSM9\n')
+fileout.write('# ENCRYPTED By HackerSM9\n')
+fileout.write('# https://github.com/HackerSM9\n')
 fileout.write('import marshal\n')
 fileout.write('exec(marshal.loads(' + repr(data) + '))')
 fileout.close()
-time.sleep(3) 
+time.sleep(2) 
 print (y+'\n ['+w+'+'+y+'] '+w+'File success to compile   '+y+': ' + w + o + '.py\n')
