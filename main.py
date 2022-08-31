@@ -6,6 +6,10 @@ import base64
 import marshal
 import py_compile
 
+green = ""
+yellow = ""
+blue = ""
+
 # Select raw_input() or input()
 if sys.version_info[0]==2:
     _input = "raw_input('%s')"
@@ -29,7 +33,7 @@ def banner(): # Program Banner
             ║    Powerful Python Code Obfuscator    ║
             ║                                       ║ 
             ║  Author : HackerSM9                   ║
-            ║  Origin : Made in INDIA                                     ║
+            ║  Origin : Made in INDIA               ║                      ║
             ║  Github : Github.com/HackerSM9        ║ 
             ╚═════════════════════════════════╝
 ''')
