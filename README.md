@@ -1,2 +1,2 @@
 # Encoder
-Encrypt your Shell &amp; Python code
+Encrypt your Python code.
