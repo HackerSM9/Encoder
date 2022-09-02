@@ -6,9 +6,10 @@ import base64
 import marshal
 import py_compile
 
-green = ""
-yellow = ""
-blue = ""
+green = "\033[1;32m"
+yellow = "\033[1;33m"
+blue = "\033[1;34m"
+end = "\033[0m"
 
 # Select raw_input() or input()
 if sys.version_info[0]==2:
@@ -27,15 +28,15 @@ mar = lambda in_ : marshal.dumps(compile(in_,'<x>','exec'))
 note = "\x23\x20\x45\x4e\x43\x52\x59\x50\x54\x45\x44\x20\x62\x79\x20\x48\x61\x63\x6b\x65\x72\x53\x4d\x39\x20\x0a\x23\x20\x68\x74\x74\x70\x73\x3a\x2f\x2f\x77\x77\x77\x2e\x67\x69\x74\x68\x75\x62\x2e\x63\x6f\x6d\x2f\x48\x61\x63\x6b\x65\x72\x53\x4d\x39\n"
 
 def banner(): # Program Banner
-    print('''
-            ╔═════════════════════════════════╗
-            ║        ||  Python Encryptor  ||       ║ 
-            ║    Powerful Python Code Obfuscator    ║
-            ║                                       ║ 
-            ║  Author : HackerSM9                   ║
-            ║  Origin : Made in INDIA               ║                      ║
-            ║  Github : Github.com/HackerSM9        ║ 
-            ╚═════════════════════════════════╝
+    print(f'''
+       {yellow}     ╔═════════════════════════════════╗
+            ║        {green}||  Python Encryptor  ||       {yellow}║ 
+            ║    {green}Powerful Python Code Obfuscator    {yellow}║
+            {yellow}║                                       ║ 
+            ║  Author : {blue}HackerSM9                   {yellow}║
+            ║  Origin : {blue}Made in INDIA              {yellow} ║                      ║
+            ║  Github : {blue}Github.com/HackerSM9       {yellow} ║ 
+            ╚═════════════════════════════════╝       {end}
 ''')
 
 def menu(): # Program Menu
