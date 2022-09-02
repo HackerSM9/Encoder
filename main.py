@@ -6,9 +6,11 @@ import base64
 import marshal
 import py_compile
 
+red = "\033[1;31m"
 green = "\033[1;32m"
 yellow = "\033[1;33m"
 blue = "\033[1;34m"
+Cyan = "\033[1;96m"
 end = "\033[0m"
 
 # Select raw_input() or input()
@@ -17,7 +19,7 @@ if sys.version_info[0]==2:
 elif sys.version_info[0]==3:
     _input = "input('%s')"
 else:
-    sys.exit("\n Your Python Version is not Supported!")
+    sys.exit(red+"\n Your Python Version is not Supported!\n")
 
 # Encoding
 zlb = lambda in_ : zlib.compress(in_)
@@ -25,7 +27,7 @@ b16 = lambda in_ : base64.b16encode(in_)
 b32 = lambda in_ : base64.b32encode(in_)
 b64 = lambda in_ : base64.b64encode(in_)
 mar = lambda in_ : marshal.dumps(compile(in_,'<x>','exec'))
-note = "\x23\x20\x45\x4e\x43\x52\x59\x50\x54\x45\x44\x20\x62\x79\x20\x48\x61\x63\x6b\x65\x72\x53\x4d\x39\x20\x0a\x23\x20\x68\x74\x74\x70\x73\x3a\x2f\x2f\x77\x77\x77\x2e\x67\x69\x74\x68\x75\x62\x2e\x63\x6f\x6d\x2f\x48\x61\x63\x6b\x65\x72\x53\x4d\x39\n"
+note = Cyan+"\x23\x20\x45\x4e\x43\x52\x59\x50\x54\x45\x44\x20\x62\x79\x20\x48\x61\x63\x6b\x65\x72\x53\x4d\x39\x20\x0a\x23\x20\x68\x74\x74\x70\x73\x3a\x2f\x2f\x77\x77\x77\x2e\x67\x69\x74\x68\x75\x62\x2e\x63\x6f\x6d\x2f\x48\x61\x63\x6b\x65\x72\x53\x4d\x39\n"
 
 def banner(): # Program Banner
     print(f'''
